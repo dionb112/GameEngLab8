@@ -1,1 +1,1 @@
-Implementation will identify and address any Thread Safety issues. This should be a small report on Thread Safety and how this has been addressed in project.
+In C++11 and later versions, initialization of function-local static variables is thread-safe, so my code here is guaranteed to be safe as I am utilizing a static innitialization of std::mutex within the ticket system function, locking and unlocking before and after each print statement also, ensuring that nothing will be written while I am reading in that thread.
